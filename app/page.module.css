@@ -1,0 +1,249 @@
+.header{ 
+  border-bottom: 1px solid grey ;
+  background: linear-gradient(90deg, hsla(147, 8%, 22%, 1) 0%, hsla(190, 90%, 12%, 1) 100%);
+}
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logospan{
+  font-size: 3rem;
+  margin-left: -4px;
+}
+.logoimg{
+  width: 50px;
+  height: 50px;
+}
+.navitems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.menu{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+}
+.a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.a:hover{
+  font-size: 1.5rem;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  gap: 5rem;
+}
+.content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.name{
+  background: linear-gradient(90deg, hsla(173, 42%, 57%, 1) 0%, hsla(118, 29%, 47%, 1) 100%);
+  color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+}
+.para{
+ font-size: 1.5rem;
+ margin-top: 10px;
+}
+.para1{
+  font-size: 1.2rem;
+  text-align: justify;
+
+}
+.icon{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+.socials{
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.icon{
+  color: white;
+}
+.icon:hover{
+  color: black;
+}
+.btn{
+  display: flex;
+  gap: 2rem;
+}
+.button{
+  padding: 10px;
+  background: linear-gradient(90deg, hsla(173, 42%, 57%, 1) 0%, hsla(118, 29%, 47%, 1) 100%);
+  border: none;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+
+}
+.button:hover{
+  background: linear-gradient(180deg, hsla(173, 42%, 57%, 1) 0%, hsla(118, 29%, 47%, 1) 100%);
+}
+.button:hover a{
+  color: black;
+  font-weight: 600;
+}
+.imgdiv{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 20px rgb(64, 218, 200)) ;
+}
+
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.lang{
+  width: 50px;
+  height: 50px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+.form{
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: rgb(18, 58, 56);
+  filter: blur(1px 2px 10px );
+}
+.input{
+  display: flex;
+  gap: 1rem;
+  margin: 10px 0px;
+}
+.form textarea, .form input{
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  font-size: 1.2rem;
+}
+
+.submit button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .wrapper{
+    padding: 0.5rem;
+  }
+  .hero{
+    flex-direction: column;
+    
+  }
+  .content{
+    width: 100%;
+  }
+  .imgdiv{
+    width: 100%;
+  }
+  .navitems{
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 70px;
+    width: 100vw;
+    text-align: center;
+  }
+  .navitems li{
+    margin-bottom: 15px;
+  }
+  .menu{
+    display: block;
+  }
+  .skill{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+  .form{
+    margin: 5px;
+  }
+  .input{
+    display: block;
+    width: 100%;
+  }
+  .input input{
+    margin-top: 10px;
+    width: 92%;
+  }
+  .tab{
+    display: none;
+  }
+}
